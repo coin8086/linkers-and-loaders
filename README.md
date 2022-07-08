@@ -1,6 +1,15 @@
-Refer to https://www.iecc.com/linker/linker01.html and http://em386.blogspot.com/2006/10/resolving-elf-relocation-name-symbols.html
+Refer to
 
-Show object relocation info by `objdump -d m`, `objdump -R m`, and `readelf -r m`.
+* https://www.iecc.com/linker/linker01.html
+* http://em386.blogspot.com/2006/10/resolving-elf-relocation-name-symbols.html
 
-Also, `objdump -d a.o` and `objdump -d m.o` show the relocation at (static) linking stage.
+Generate object file by `gcc -c *.c`.
+
+Generate assembler code file by `gcc -S *.c`.
+
+Then you can check the object file (in ELF) by `objdump` and `readelf`.
+
+* Show all headers by `objdump -x`.
+* Show assembler code by `objdump -d`
+* Show object relocation info by `objdump -d`, `objdump -R`, and `readelf -r`.
 
