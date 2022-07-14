@@ -56,3 +56,5 @@ w2.c:(.text+0x0): multiple definition of `write'
 w.o:w.c:(.text+0x0): first defined here
 collect2: error: ld returned 1 exit status
 ```
+
+This means a "private" version of `write` can "hide" the definition in a lib. But you can not have multiple definitions for the same symbol in input .o files!
