@@ -63,7 +63,7 @@ collect2: error: ld returned 1 exit status
 
 This means a "private" version of `write` can "hide" the definition in a lib. But you can not have multiple definitions for the same symbol in input .o files!
 
-# Symbols are Resolved only by Matching Names
+## Symbols are Resolved only by Matching Names
 
 Try this
 
