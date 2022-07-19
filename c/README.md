@@ -1,3 +1,5 @@
+# Experiments in C
+
 ## Multiple Definitions for the Same Symbol
 
 Try this
@@ -110,3 +112,15 @@ This is a, too!
 ```
 
 This means linker time type checking is still meaningful.
+
+## Static Linked libc
+
+Try this
+
+```bash
+gcc -c *.c
+gcc -o x2 a.o m.o -lc -static
+```
+
+Then check the binary with `readelf -a x2`. No dynamic secion will be found.
+
