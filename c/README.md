@@ -142,11 +142,11 @@ LD_LIBRARY_PATH=. ./x
 ### Versioning by soname
 
 Naming convension:
-  * real/file name: libxyz.so.<major>.<minor>.<patch>, e.g. libxyz.so.1.0.1
-  * soname: libxyz.so.<major>, e.g. libxyz.so.1, typically a soft link to real/file name.
-  * linker name: libxyz.so, e.g. libxyz.so, typically soft link a soft link to soname.
+  * real/file name: libxyz.so.{major}.{minor}.{patch}, e.g. libxyz.so.1.0.1
+  * soname: libxyz.so.{major}, e.g. libxyz.so.1, typically a soft link to real/file name.
+  * linker name: libxyz.so, e.g. libxyz.so, typically a soft link to soname.
 
-Specify a soname when linking a shared library, while having the real/file name containing the full version (<major>.<minor>.<patch>):
+Specify a soname when linking a shared library, while having the full version ({major}.{minor}.{patch}) in the real/file name:
 
 ```bash
 gcc -c -fpic a.c
