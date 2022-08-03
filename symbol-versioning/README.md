@@ -139,6 +139,8 @@ libsv.so v1 and libsv.so v2 show that
 * Can a client program specify a specific version of a symbol to link against?
 * How about dynamic linking by dlsym? Can it specify a versioned symbol, like `xyz@@VER_2`?
 
-## Referenece
+## Refereneces
 
-https://man7.org/conf/lca2006/shared_libraries/slide19a.html
+* https://gcc.gnu.org/wiki/SymbolVersioning
+* http://sourceware.org/binutils/docs/ld/VERSION.html
+* https://man7.org/conf/lca2006/shared_libraries/slide19a.html
