@@ -1,0 +1,8 @@
+v1.0 {
+  global: foo;
+  local: *;
+};
+
+v1.1 {
+  bar;
+} v1.0;
