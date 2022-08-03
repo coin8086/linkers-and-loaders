@@ -143,4 +143,5 @@ libsv.so v1 and libsv.so v2 show that
 
 * https://gcc.gnu.org/wiki/SymbolVersioning
 * http://sourceware.org/binutils/docs/ld/VERSION.html
+* http://web.mit.edu/rhel-doc/3/rhel-as-en-3/symver.html
 * https://man7.org/conf/lca2006/shared_libraries/slide19a.html
