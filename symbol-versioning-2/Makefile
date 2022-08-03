@@ -1,7 +1,6 @@
-TARGET_LIB=libsv.so
-TARGET_BIN=p
+TARGETS=libsv.so p p2
 
-all: $(TARGET_LIB) $(TARGET_BIN)
+all: $(TARGETS)
 
 libsv.so: sv_lib.o sv_lib.map
 	gcc -o $@ -Wall -shared sv_lib.o -Wl,--version-script,sv_lib.map
@@ -12,5 +11,8 @@ sv_lib.o: sv_lib.c
 p: sv_prog.c libsv.so
 	gcc -o $@ -Wall $^
 
+p2: dl_prog.c
+	gcc -o $@ -Wall $^ -ldl
+
 clean:
-	rm -f *.o $(TARGET_LIB) $(TARGET_BIN)
+	rm -f *.o $(TARGETS)
