@@ -4,7 +4,7 @@ To address [the questions in previous section](../symbol-versioning/README.md#qu
 
 1. How to link to a specific version of a symbol?
   By a declaration like
-  
+
   ```c
   __asm__(".symver old_foo,foo@v1.0");
   void old_foo();
