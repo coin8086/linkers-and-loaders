@@ -34,3 +34,7 @@ Clean build results
 ```bash
 make clean
 ```
+
+## References:
+
+* https://man7.org/conf/lca2006/shared_libraries/slide6.html
