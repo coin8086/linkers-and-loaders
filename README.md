@@ -1,10 +1,8 @@
-Refer to
+# Linkers and Loaders
 
-* https://www.iecc.com/linker/linker01.html
-* http://em386.blogspot.com/2006/10/resolving-elf-relocation-name-symbols.html
+This repo contains examples for the subject "linkers and loaders", which is also [a book by Morgan-Kaufman](https://www.iecc.com/linker/). However, the examples also involves materials from somewhere else. See README in each subdirectory for more.
+
+References:
+
+* https://www.iecc.com/linker/
 * https://man7.org/conf/lca2006/shared_libraries/index.html
-
-Check the object file (in ELF) by `objdump` and `readelf`.
-
-* Show assembler code by `objdump -d`, and optionally `objdump -d -M intel-mnemonic` (by default it's `att-mnemonic`).
-* Show object relocation info by `objdump -d`, `objdump -R`, and `readelf -r`.
